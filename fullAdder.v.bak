@@ -1,0 +1,7 @@
+module fullAdder(
+input logic [0..2] operandos,
+output logic [0..1] resultado);
+
+casex(operandos)
+
+endmodule

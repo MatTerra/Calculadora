@@ -1,3 +1,3 @@
 module (
-	input logic [8..0] entradas,
-	output logic [4..0] saidas);
+	input logic [0:8] entradas,
+	output logic [0:4] saidas);
