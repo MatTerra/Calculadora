@@ -1,0 +1,487 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/05/2018 19:25:12"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    ULA
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ULA_vlg_sample_tst(
+	A,
+	B0,
+	B1,
+	B2,
+	B3,
+	B4,
+	B5,
+	B6,
+	B7,
+	Invert,
+	sampler_tx
+);
+input [7:0] A;
+input  B0;
+input  B1;
+input  B2;
+input  B3;
+input  B4;
+input  B5;
+input  B6;
+input  B7;
+input  Invert;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(A or B0 or B1 or B2 or B3 or B4 or B5 or B6 or B7 or Invert)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module ULA_vlg_check_tst (
+	BO,
+	OK,
+	sampler_rx
+);
+input [7:0] BO;
+input  OK;
+input sampler_rx;
+
+reg [7:0] BO_expected;
+reg  OK_expected;
+
+reg [7:0] BO_prev;
+reg  OK_prev;
+
+reg [7:0] BO_expected_prev;
+reg  OK_expected_prev;
+
+reg [7:0] last_BO_exp;
+reg  last_OK_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	BO_prev = BO;
+	OK_prev = OK;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	BO_expected_prev = BO_expected;
+	OK_expected_prev = OK_expected;
+end
+
+
+// expected BO[ 7 ]
+initial
+begin
+	BO_expected[7] = 1'bX;
+end 
+// expected BO[ 6 ]
+initial
+begin
+	BO_expected[6] = 1'bX;
+end 
+// expected BO[ 5 ]
+initial
+begin
+	BO_expected[5] = 1'bX;
+end 
+// expected BO[ 4 ]
+initial
+begin
+	BO_expected[4] = 1'bX;
+end 
+// expected BO[ 3 ]
+initial
+begin
+	BO_expected[3] = 1'bX;
+end 
+// expected BO[ 2 ]
+initial
+begin
+	BO_expected[2] = 1'bX;
+end 
+// expected BO[ 1 ]
+initial
+begin
+	BO_expected[1] = 1'bX;
+end 
+// expected BO[ 0 ]
+initial
+begin
+	BO_expected[0] = 1'bX;
+end 
+
+// expected OK
+initial
+begin
+	OK_expected = 1'bX;
+end 
+// generate trigger
+always @(BO_expected or BO or OK_expected or OK)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected BO = %b | expected OK = %b | ",BO_expected_prev,OK_expected_prev);
+	$display("| real BO = %b | real OK = %b | ",BO_prev,OK_prev);
+`endif
+	if (
+		( BO_expected_prev[0] !== 1'bx ) && ( BO_prev[0] !== BO_expected_prev[0] )
+		&& ((BO_expected_prev[0] !== last_BO_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[0] = BO_expected_prev[0];
+	end
+	if (
+		( BO_expected_prev[1] !== 1'bx ) && ( BO_prev[1] !== BO_expected_prev[1] )
+		&& ((BO_expected_prev[1] !== last_BO_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[1] = BO_expected_prev[1];
+	end
+	if (
+		( BO_expected_prev[2] !== 1'bx ) && ( BO_prev[2] !== BO_expected_prev[2] )
+		&& ((BO_expected_prev[2] !== last_BO_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[2] = BO_expected_prev[2];
+	end
+	if (
+		( BO_expected_prev[3] !== 1'bx ) && ( BO_prev[3] !== BO_expected_prev[3] )
+		&& ((BO_expected_prev[3] !== last_BO_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[3] = BO_expected_prev[3];
+	end
+	if (
+		( BO_expected_prev[4] !== 1'bx ) && ( BO_prev[4] !== BO_expected_prev[4] )
+		&& ((BO_expected_prev[4] !== last_BO_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[4] = BO_expected_prev[4];
+	end
+	if (
+		( BO_expected_prev[5] !== 1'bx ) && ( BO_prev[5] !== BO_expected_prev[5] )
+		&& ((BO_expected_prev[5] !== last_BO_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[5] = BO_expected_prev[5];
+	end
+	if (
+		( BO_expected_prev[6] !== 1'bx ) && ( BO_prev[6] !== BO_expected_prev[6] )
+		&& ((BO_expected_prev[6] !== last_BO_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[6] = BO_expected_prev[6];
+	end
+	if (
+		( BO_expected_prev[7] !== 1'bx ) && ( BO_prev[7] !== BO_expected_prev[7] )
+		&& ((BO_expected_prev[7] !== last_BO_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp[7] = BO_expected_prev[7];
+	end
+	if (
+		( OK_expected_prev !== 1'bx ) && ( OK_prev !== OK_expected_prev )
+		&& ((OK_expected_prev !== last_OK_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port OK :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", OK_expected_prev);
+		$display ("     Real value = %b", OK_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_OK_exp = OK_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module ULA_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] A;
+reg B0;
+reg B1;
+reg B2;
+reg B3;
+reg B4;
+reg B5;
+reg B6;
+reg B7;
+reg Invert;
+// wires                                               
+wire [7:0] BO;
+wire OK;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+ULA i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B0(B0),
+	.B1(B1),
+	.B2(B2),
+	.B3(B3),
+	.B4(B4),
+	.B5(B5),
+	.B6(B6),
+	.B7(B7),
+	.BO(BO),
+	.Invert(Invert),
+	.OK(OK)
+);
+// A[ 7 ]
+initial
+begin
+	A[7] = 1'b0;
+end 
+// A[ 6 ]
+initial
+begin
+	A[6] = 1'b0;
+end 
+// A[ 5 ]
+initial
+begin
+	A[5] = 1'b0;
+end 
+// A[ 4 ]
+initial
+begin
+	A[4] = 1'b0;
+	A[4] = #800000 1'b1;
+end 
+// A[ 3 ]
+initial
+begin
+	A[3] = 1'b0;
+	A[3] = #400000 1'b1;
+	A[3] = #400000 1'b0;
+end 
+// A[ 2 ]
+initial
+begin
+	repeat(2)
+	begin
+		A[2] = 1'b0;
+		A[2] = #200000 1'b1;
+		# 200000;
+	end
+	A[2] = 1'b0;
+end 
+// A[ 1 ]
+always
+begin
+	A[1] = 1'b0;
+	A[1] = #100000 1'b1;
+	#100000;
+end 
+// A[ 0 ]
+always
+begin
+	A[0] = 1'b0;
+	A[0] = #50000 1'b1;
+	#50000;
+end 
+
+// B0
+initial
+begin
+	B0 = 1'b1;
+end 
+
+// B1
+initial
+begin
+	B1 = 1'b0;
+end 
+
+// B2
+initial
+begin
+	B2 = 1'b0;
+end 
+
+// B3
+initial
+begin
+	B3 = 1'b0;
+end 
+
+// B4
+initial
+begin
+	B4 = 1'b0;
+end 
+
+// B5
+initial
+begin
+	B5 = 1'b0;
+end 
+
+// B6
+initial
+begin
+	B6 = 1'b0;
+end 
+
+// B7
+initial
+begin
+	B7 = 1'b0;
+end 
+
+// Invert
+always
+begin
+	Invert = 1'b0;
+	Invert = #500000 1'b1;
+	#500000;
+end 
+
+ULA_vlg_sample_tst tb_sample (
+	.A(A),
+	.B0(B0),
+	.B1(B1),
+	.B2(B2),
+	.B3(B3),
+	.B4(B4),
+	.B5(B5),
+	.B6(B6),
+	.B7(B7),
+	.Invert(Invert),
+	.sampler_tx(sampler)
+);
+
+ULA_vlg_check_tst tb_out(
+	.BO(BO),
+	.OK(OK),
+	.sampler_rx(sampler)
+);
+endmodule
+
