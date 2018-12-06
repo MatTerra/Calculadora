@@ -3,7 +3,7 @@ module Saidas(in,cont);
 	output [7:0] cont;
 
 	always @(*)
-	casex (in)
+	case0 (in)
 		//RDY1
 		//00
 		7'b 1001110: cont = 8'b 00001000; //# getM
@@ -84,7 +84,6 @@ module Saidas(in,cont);
 		7'b 1101100: cont = 8'b 00000000; // C - 
 		7'b 1101101: cont = 8'b 00000001; // D =
 		7'b 1101111: cont = 8'b 00000010; // * setM
-
 		default: cont = 8'b 00000000;
 	endcase
 endmodule
