@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Calculadora
-Thu Dec 06 10:46:57 2018
+Thu Dec 06 11:32:10 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,27 +10,35 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22
-  6. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst20
-  7. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst18
-  8. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst16
-  9. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst14
- 10. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst12
- 11. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst10
- 12. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst1
- 13. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst22
- 14. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst20
- 15. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst18
- 16. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst16
- 17. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst14
- 18. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst12
- 19. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst10
- 20. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst1
- 21. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d3"
- 22. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d2"
- 23. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d1"
- 24. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d0"
- 25. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22
+ 13. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst20
+ 14. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst18
+ 15. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst16
+ 16. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst14
+ 17. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst12
+ 18. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst10
+ 19. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst1
+ 20. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst22
+ 21. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst20
+ 22. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst18
+ 23. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst16
+ 24. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst14
+ 25. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst12
+ 26. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst10
+ 27. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst1
+ 28. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d3"
+ 29. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d2"
+ 30. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d1"
+ 31. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d0"
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -56,20 +64,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Dec 06 10:46:56 2018               ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 06 11:32:10 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Calculadora                                     ;
 ; Top-level Entity Name              ; Calculadore                                     ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 365                                             ;
+;     Total combinational functions  ; 351                                             ;
+;     Dedicated logic registers      ; 170                                             ;
+; Total registers                    ; 170                                             ;
+; Total pins                         ; 92                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -168,6 +176,181 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+; Saidas.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Saidas.v             ;         ;
+; teclado.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/teclado.v            ;         ;
+; decoder7.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/decoder7.v           ;         ;
+; fullAdder.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/fullAdder.v          ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/ULA.bdf              ;         ;
+; Reg8bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Reg8bit.bdf          ;         ;
+; Calculadore.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Calculadore.bdf      ;         ;
+; Reg4bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Reg4bit.bdf          ;         ;
+; MaquinaDeEstados.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/MaquinaDeEstados.bdf ;         ;
+; controle.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/controle.v           ;         ;
+; mux2.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/mux2.v               ;         ;
+; mux4.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/mux4.v               ;         ;
+; BinToBCD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/BinToBCD.bdf         ;         ;
+; Comp2ToBin.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Comp2ToBin.bdf       ;         ;
+; 74185.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74185.bdf            ;         ;
+; mux.tdf                          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mux.tdf                ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc            ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf            ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc         ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc             ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc           ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc           ;         ;
+; db/mux_lmc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/db/mux_lmc.tdf       ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 365      ;
+;                                             ;          ;
+; Total combinational functions               ; 351      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 89       ;
+;     -- 3 input functions                    ; 122      ;
+;     -- <=2 input functions                  ; 140      ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 244      ;
+;     -- arithmetic mode                      ; 107      ;
+;                                             ;          ;
+; Total registers                             ; 170      ;
+;     -- Dedicated logic registers            ; 170      ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 92       ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 128      ;
+; Total fan-out                               ; 1516     ;
+; Average fan-out                             ; 2.47     ;
++---------------------------------------------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |Calculadore                 ; 351 (1)           ; 170 (0)      ; 0           ; 0            ; 0       ; 0         ; 92   ; 0            ; |Calculadore                                                ; work         ;
+;    |BinToBCD:inst32|         ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|BinToBCD:inst32                                ; work         ;
+;       |74185:inst1|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|BinToBCD:inst32|74185:inst1                    ; work         ;
+;       |74185:inst|           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|BinToBCD:inst32|74185:inst                     ; work         ;
+;    |Comp2ToBin:inst41|       ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41                              ; work         ;
+;       |ULA:ulatobin|         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin                 ; work         ;
+;          |fullAdder:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst2 ; work         ;
+;          |fullAdder:inst3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst3 ; work         ;
+;          |fullAdder:inst4|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst4 ; work         ;
+;          |fullAdder:inst5|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst5 ; work         ;
+;          |fullAdder:inst6|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst6 ; work         ;
+;          |fullAdder:inst7|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst7 ; work         ;
+;    |MaquinaDeEstados:inst12| ; 6 (3)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|MaquinaDeEstados:inst12                        ; work         ;
+;       |controle:inst|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|MaquinaDeEstados:inst12|controle:inst          ; work         ;
+;    |Reg4bit:REGDA5|          ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg4bit:REGDA5                                 ; work         ;
+;    |Reg4bit:REGDA|           ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg4bit:REGDA                                  ; work         ;
+;    |Reg8bit:REGA|            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGA                                   ; work         ;
+;    |Reg8bit:REGB|            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGB                                   ; work         ;
+;    |Reg8bit:REGM|            ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGM                                   ; work         ;
+;    |Reg8bit:REGR|            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGR                                   ; work         ;
+;    |Saidas:inst38|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Saidas:inst38                                  ; work         ;
+;    |ULA:ULA|                 ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA                                        ; work         ;
+;       |fullAdder:inst2|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst2                        ; work         ;
+;       |fullAdder:inst3|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst3                        ; work         ;
+;       |fullAdder:inst4|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst4                        ; work         ;
+;       |fullAdder:inst5|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst5                        ; work         ;
+;       |fullAdder:inst6|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst6                        ; work         ;
+;       |fullAdder:inst7|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst7                        ; work         ;
+;       |fullAdder:inst8|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst8                        ; work         ;
+;       |fullAdder:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst                         ; work         ;
+;    |decoder7:DECODEA|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:DECODEA                               ; work         ;
+;    |decoder7:DECODEB|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:DECODEB                               ; work         ;
+;    |decoder7:inst30|         ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:inst30                                ; work         ;
+;    |decoder7:inst9|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:inst9                                 ; work         ;
+;    |mux2:MUX20|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX20                                     ; work         ;
+;    |mux2:MUX21|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX21                                     ; work         ;
+;    |mux2:MUX22|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX22                                     ; work         ;
+;    |mux2:MUX23|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX23                                     ; work         ;
+;    |mux2:MUX24|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX24                                     ; work         ;
+;    |mux2:MUX25|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX25                                     ; work         ;
+;    |mux2:MUX26|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX26                                     ; work         ;
+;    |mux2:MUX27|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX27                                     ; work         ;
+;    |mux2:MUX2B0|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B0                                    ; work         ;
+;    |mux2:MUX2B1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B1                                    ; work         ;
+;    |mux2:MUX2B2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B2                                    ; work         ;
+;    |mux2:MUX2B3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B3                                    ; work         ;
+;    |mux2:MUX2B4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B4                                    ; work         ;
+;    |mux2:MUX2B5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B5                                    ; work         ;
+;    |mux2:MUX2B6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B6                                    ; work         ;
+;    |mux2:MUX2B7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B7                                    ; work         ;
+;    |teclado:inst16|          ; 226 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16                                 ; work         ;
+;       |controlador:U0|       ; 226 (58)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0                  ; work         ;
+;          |Debouncer:d0|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d0     ; work         ;
+;          |Debouncer:d1|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d1     ; work         ;
+;          |Debouncer:d2|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d2     ; work         ;
+;          |Debouncer:d3|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d3     ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; inst5                                 ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 170   ;
+; Number of registers using Synchronous Clear  ; 40    ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 84    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; teclado:inst16|controlador:U0|linha[0] ; 4       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Calculadore|Reg8bit:REGM|inst7                                     ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d0|Counter[9]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d1|Counter[11] ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d2|Counter[9]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d3|Counter[18] ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|tecla[3]                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -383,12 +566,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 06 10:46:45 2018
+    Info: Processing started: Thu Dec 06 11:31:59 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file saidas.v
@@ -426,6 +618,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file bintobc
 Info (12021): Found 1 design units, including 1 entities, in source file comp2tobin.bdf
     Info (12023): Found entity 1: Comp2ToBin
 Info (12127): Elaborating entity "Calculadore" for the top level hierarchy
+Warning (275083): Bus "IN3[1]" found using same base name as "IN3", which might lead to a name conflict.
+Warning (275083): Bus "IN2[1]" found using same base name as "IN2", which might lead to a name conflict.
+Warning (275083): Bus "IN1[1]" found using same base name as "IN1", which might lead to a name conflict.
+Warning (275083): Bus "IN0[1]" found using same base name as "IN0", which might lead to a name conflict.
 Warning (275011): Block or symbol "OR2" of instance "inst18" overlaps another block or symbol
 Warning (275080): Converted elements in bus name "in" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "in[5..0]" to "in5..0"
@@ -579,11 +775,78 @@ Warning (10935): Verilog HDL Casex/Casez warning at controle.v(23): casex/casez 
 Info (12128): Elaborating entity "mux2" for hierarchy "mux2:MUX27"
 Info (12128): Elaborating entity "mux4" for hierarchy "mux4:MUX7"
 Info (12128): Elaborating entity "Reg4bit" for hierarchy "Reg4bit:REGDA5"
-Error (12009): Node "Op" is missing source
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 127 warnings
-    Error: Peak virtual memory: 4600 megabytes
-    Error: Processing ended: Thu Dec 06 10:46:57 2018
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:04
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "Saidas:inst38|Ram0" is uninferred due to inappropriate RAM size
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/db/Calculadora.rom0_Saidas_ae7483a8.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer Saidas:inst38|Ram0~synth
+    Warning (19017): Found clock multiplexer Saidas:inst38|Ram0~synth
+    Warning (19017): Found clock multiplexer Saidas:inst38|Ram0~synth
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[25]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[23]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[21]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[19]" and its non-tri-state driver.
+Warning (13039): The following bidir pins have no drivers
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+    Warning (13040): Bidir "GPIO_1" has no driver
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC
+    Warning (13410): Pin "LEDG[1]" is stuck at GND
+    Warning (13410): Pin "LEDG[0]" is stuck at VCC
+    Warning (13410): Pin "LEDR[13]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 457 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 55 output pins
+    Info (21060): Implemented 36 bidirectional pins
+    Info (21061): Implemented 365 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 190 warnings
+    Info: Peak virtual memory: 4625 megabytes
+    Info: Processing ended: Thu Dec 06 11:32:10 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
 
 
