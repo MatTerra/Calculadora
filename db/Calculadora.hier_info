@@ -1,0 +1,251 @@
+|TesteMaquinaDeEstados
+GPIO_1[0] <> teclado:tec.GPIO_1[0]
+GPIO_1[1] <> teclado:tec.GPIO_1[1]
+GPIO_1[2] <> teclado:tec.GPIO_1[2]
+GPIO_1[3] <> teclado:tec.GPIO_1[3]
+GPIO_1[4] <> teclado:tec.GPIO_1[4]
+GPIO_1[5] <> teclado:tec.GPIO_1[5]
+GPIO_1[6] <> teclado:tec.GPIO_1[6]
+GPIO_1[7] <> teclado:tec.GPIO_1[7]
+GPIO_1[8] <> teclado:tec.GPIO_1[8]
+GPIO_1[9] <> teclado:tec.GPIO_1[9]
+GPIO_1[10] <> teclado:tec.GPIO_1[10]
+GPIO_1[11] <> teclado:tec.GPIO_1[11]
+GPIO_1[12] <> teclado:tec.GPIO_1[12]
+GPIO_1[13] <> teclado:tec.GPIO_1[13]
+GPIO_1[14] <> teclado:tec.GPIO_1[14]
+GPIO_1[15] <> teclado:tec.GPIO_1[15]
+GPIO_1[16] <> teclado:tec.GPIO_1[16]
+GPIO_1[17] <> teclado:tec.GPIO_1[17]
+GPIO_1[18] <> teclado:tec.GPIO_1[18]
+GPIO_1[19] <> teclado:tec.GPIO_1[19]
+GPIO_1[20] <> teclado:tec.GPIO_1[20]
+GPIO_1[21] <> teclado:tec.GPIO_1[21]
+GPIO_1[22] <> teclado:tec.GPIO_1[22]
+GPIO_1[23] <> teclado:tec.GPIO_1[23]
+GPIO_1[24] <> teclado:tec.GPIO_1[24]
+GPIO_1[25] <> teclado:tec.GPIO_1[25]
+GPIO_1[26] <> teclado:tec.GPIO_1[26]
+GPIO_1[27] <> teclado:tec.GPIO_1[27]
+GPIO_1[28] <> teclado:tec.GPIO_1[28]
+GPIO_1[29] <> teclado:tec.GPIO_1[29]
+GPIO_1[30] <> teclado:tec.GPIO_1[30]
+GPIO_1[31] <> teclado:tec.GPIO_1[31]
+GPIO_1[32] <> teclado:tec.GPIO_1[32]
+GPIO_1[33] <> teclado:tec.GPIO_1[33]
+GPIO_1[34] <> teclado:tec.GPIO_1[34]
+GPIO_1[35] <> teclado:tec.GPIO_1[35]
+CLOCK_50 => teclado:tec.CLOCK_50
+HEX0[0] <= decoder7:dec.Out[0]
+HEX0[1] <= decoder7:dec.Out[1]
+HEX0[2] <= decoder7:dec.Out[2]
+HEX0[3] <= decoder7:dec.Out[3]
+HEX0[4] <= decoder7:dec.Out[4]
+HEX0[5] <= decoder7:dec.Out[5]
+HEX0[6] <= decoder7:dec.Out[6]
+LEDR[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= clk.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= in[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= in[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= in[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= <GND>
+LEDR[8] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|teclado:tec
+GPIO_1[0] <> <UNC>
+GPIO_1[1] <> <UNC>
+GPIO_1[2] <> <UNC>
+GPIO_1[3] <> <UNC>
+GPIO_1[4] <> <UNC>
+GPIO_1[5] <> <UNC>
+GPIO_1[6] <> <UNC>
+GPIO_1[7] <> <UNC>
+GPIO_1[8] <> <UNC>
+GPIO_1[9] <> <UNC>
+GPIO_1[10] <> <UNC>
+GPIO_1[12] <> <UNC>
+GPIO_1[14] <> <UNC>
+GPIO_1[16] <> <UNC>
+GPIO_1[18] <> <UNC>
+GPIO_1[19] <> GPIO_1[19]
+GPIO_1[20] <> <UNC>
+GPIO_1[21] <> GPIO_1[21]
+GPIO_1[22] <> <UNC>
+GPIO_1[23] <> GPIO_1[23]
+GPIO_1[24] <> <UNC>
+GPIO_1[25] <> GPIO_1[25]
+GPIO_1[26] <> <UNC>
+GPIO_1[27] <> <UNC>
+GPIO_1[28] <> <UNC>
+GPIO_1[29] <> <UNC>
+GPIO_1[30] <> <UNC>
+GPIO_1[31] <> <UNC>
+GPIO_1[32] <> <UNC>
+GPIO_1[33] <> <UNC>
+GPIO_1[34] <> <UNC>
+GPIO_1[35] <> <UNC>
+CLOCK_50 => CLOCK_50.IN1
+tecla[0] <= controlador:U0.tecla
+tecla[1] <= controlador:U0.tecla
+tecla[2] <= controlador:U0.tecla
+tecla[3] <= controlador:U0.tecla
+ready <= controlador:U0.ready
+
+
+|TesteMaquinaDeEstados|teclado:tec|controlador:U0
+clk => clk.IN4
+linhaN[0] <= linha[0].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[1] <= linha[1].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[2] <= linha[2].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[3] <= linha[3].DB_MAX_OUTPUT_PORT_TYPE
+colunaN[0] => coluna[0].IN1
+colunaN[1] => coluna[1].IN1
+colunaN[2] => coluna[2].IN1
+colunaN[3] => coluna[3].IN1
+tecla[0] <= tecla[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[1] <= tecla[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[2] <= tecla[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[3] <= tecla[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d0
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d1
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d2
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d3
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|decoder7:dec
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TesteMaquinaDeEstados|controle:inst
+in[0] => Decoder0.IN5
+in[1] => Decoder0.IN4
+in[2] => Decoder0.IN3
+in[3] => Decoder0.IN2
+in[4] => Decoder0.IN1
+in[5] => Decoder0.IN0
+cont[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+cont[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
