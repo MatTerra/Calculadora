@@ -1,0 +1,15 @@
+module controle(in,cont);
+	input [5:0] in;
+	output [2:0] cont;
+
+	always @(*)
+	casex (in)
+		5'b 00111*: cont = 2'b 01;
+		5'b 000***: cont = 2'b 01;
+		5'b 00100*: cont = 2'b 01;
+		5'b 00101*: cont = 2'b 00;
+		5'b 00110*: cont = 2'b 00;
+		
+		default: g = 1'b 0;
+	endcase
+endmodule

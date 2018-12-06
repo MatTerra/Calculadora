@@ -1,13 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Calculadora">
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst10|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst12|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst14|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst16|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst18|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst1|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst20|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ULA|MUX:inst22|lpm_mux:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
