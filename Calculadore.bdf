@@ -2506,11 +2506,6 @@ applicable agreement for further details.
 	(pt -88 -8)
 )
 (connector
-	(text "clkOp" (rect -80 -8 -52 4)(font "Arial" ))
-	(pt -16 8)
-	(pt -88 8)
-)
-(connector
 	(text "R[7]" (rect 701 304 722 316)(font "Arial" ))
 	(pt 720 320)
 	(pt 672 320)
@@ -2592,11 +2587,6 @@ applicable agreement for further details.
 (connector
 	(pt -128 424)
 	(pt -56 424)
-)
-(connector
-	(text "clkA" (rect -31 480 -9 492)(font "Arial" ))
-	(pt 0 496)
-	(pt -80 496)
 )
 (connector
 	(pt -8 368)
@@ -2707,61 +2697,6 @@ applicable agreement for further details.
 	(pt -48 774)
 )
 (connector
-	(text "escA" (rect -301 136 -276 148)(font "Arial" ))
-	(pt -288 152)
-	(pt -320 152)
-)
-(connector
-	(text "escA" (rect -312 232 -287 244)(font "Arial" ))
-	(pt -288 248)
-	(pt -320 248)
-)
-(connector
-	(text "escA" (rect -312 328 -287 340)(font "Arial" ))
-	(pt -288 344)
-	(pt -320 344)
-)
-(connector
-	(text "escA" (rect -312 424 -287 436)(font "Arial" ))
-	(pt -288 440)
-	(pt -320 440)
-)
-(connector
-	(text "escA" (rect -560 480 -535 492)(font "Arial" ))
-	(pt -536 496)
-	(pt -568 496)
-)
-(connector
-	(text "escA" (rect -560 384 -535 396)(font "Arial" ))
-	(pt -536 400)
-	(pt -568 400)
-)
-(connector
-	(text "escA" (rect -560 288 -535 300)(font "Arial" ))
-	(pt -536 304)
-	(pt -568 304)
-)
-(connector
-	(text "escA" (rect -560 192 -535 204)(font "Arial" ))
-	(pt -536 208)
-	(pt -568 208)
-)
-(connector
-	(text "escB" (rect -312 624 -288 636)(font "Arial" ))
-	(pt -288 640)
-	(pt -320 640)
-)
-(connector
-	(text "escB" (rect -312 720 -288 732)(font "Arial" ))
-	(pt -288 736)
-	(pt -320 736)
-)
-(connector
-	(text "escB" (rect -320 536 -296 548)(font "Arial" ))
-	(pt -288 552)
-	(pt -328 552)
-)
-(connector
 	(pt -288 536)
 	(pt -288 542)
 )
@@ -2794,22 +2729,12 @@ applicable agreement for further details.
 	(pt -536 592)
 )
 (connector
-	(text "escB" (rect -545 584 -521 596)(font "Arial" ))
-	(pt -568 600)
-	(pt -536 600)
-)
-(connector
 	(pt -536 696)
 	(pt -536 694)
 )
 (connector
 	(pt -536 694)
 	(pt -536 688)
-)
-(connector
-	(text "escB" (rect -549 680 -525 692)(font "Arial" ))
-	(pt -536 696)
-	(pt -568 696)
 )
 (connector
 	(pt -288 832)
@@ -2820,11 +2745,6 @@ applicable agreement for further details.
 	(pt -288 824)
 )
 (connector
-	(text "escB" (rect -305 816 -281 828)(font "Arial" ))
-	(pt -288 832)
-	(pt -320 832)
-)
-(connector
 	(pt -536 792)
 	(pt -536 790)
 )
@@ -2833,22 +2753,12 @@ applicable agreement for further details.
 	(pt -536 784)
 )
 (connector
-	(text "escB" (rect -561 776 -537 788)(font "Arial" ))
-	(pt -536 792)
-	(pt -568 792)
-)
-(connector
 	(pt -536 880)
 	(pt -536 886)
 )
 (connector
 	(pt -536 886)
 	(pt -536 888)
-)
-(connector
-	(text "escB" (rect -547 872 -523 884)(font "Arial" ))
-	(pt -536 888)
-	(pt -576 888)
 )
 (connector
 	(text "SomSub" (rect 354 16 395 28)(font "Arial" ))
@@ -2960,11 +2870,6 @@ applicable agreement for further details.
 	(pt 32 856)
 )
 (connector
-	(text "clkB" (rect -4 872 17 884)(font "Arial" ))
-	(pt -48 888)
-	(pt 32 888)
-)
-(connector
 	(pt 824 568)
 	(pt 672 568)
 )
@@ -3043,11 +2948,6 @@ applicable agreement for further details.
 (connector
 	(pt 672 1184)
 	(pt 816 1184)
-)
-(connector
-	(text "clkM" (rect 840 968 862 980)(font "Arial" ))
-	(pt 856 984)
-	(pt 832 984)
 )
 (connector
 	(pt 800 936)
@@ -3698,11 +3598,6 @@ applicable agreement for further details.
 	(pt 448 1152)
 )
 (connector
-	(text "clkR" (rect 690 432 712 444)(font "Arial" ))
-	(pt 720 448)
-	(pt 672 448)
-)
-(connector
 	(text "IN7[0]" (rect -333 93 -321 123)(font "Arial" )(vertical))
 	(pt -320 136)
 	(pt -320 112)
@@ -4047,11 +3942,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "clkB" (rect -480 1048 -459 1060)(font "Arial" ))
-	(pt -448 1064)
-	(pt -488 1064)
-)
-(connector
 	(text "tecla[3]" (rect -1168 49 -1156 85)(font "Arial" )(vertical))
 	(pt -1152 96)
 	(pt -1152 40)
@@ -4242,11 +4132,6 @@ applicable agreement for further details.
 	(text "IN1[1]" (rect -750 -72 -720 -60)(font "Arial" ))
 	(pt -728 -56)
 	(pt -768 -56)
-)
-(connector
-	(text "clkA" (rect -760 -40 -738 -28)(font "Arial" ))
-	(pt -728 -24)
-	(pt -768 -24)
 )
 (connector
 	(pt -544 -64)
@@ -4519,6 +4404,121 @@ applicable agreement for further details.
 (connector
 	(pt 1320 424)
 	(pt 1324 424)
+)
+(connector
+	(text "S[6]" (rect -560 192 -540 204)(font "Arial" ))
+	(pt -536 208)
+	(pt -568 208)
+)
+(connector
+	(text "S[6]" (rect -560 288 -540 300)(font "Arial" ))
+	(pt -536 304)
+	(pt -568 304)
+)
+(connector
+	(text "S[6]" (rect -560 384 -540 396)(font "Arial" ))
+	(pt -536 400)
+	(pt -568 400)
+)
+(connector
+	(text "S[6]" (rect -560 480 -540 492)(font "Arial" ))
+	(pt -536 496)
+	(pt -568 496)
+)
+(connector
+	(text "S[6]" (rect -301 136 -281 148)(font "Arial" ))
+	(pt -288 152)
+	(pt -320 152)
+)
+(connector
+	(text "S[6]" (rect -312 232 -292 244)(font "Arial" ))
+	(pt -288 248)
+	(pt -320 248)
+)
+(connector
+	(text "S[6]" (rect -312 328 -292 340)(font "Arial" ))
+	(pt -288 344)
+	(pt -320 344)
+)
+(connector
+	(text "S[6]" (rect -312 424 -292 436)(font "Arial" ))
+	(pt -288 440)
+	(pt -320 440)
+)
+(connector
+	(text "S[5]" (rect -320 528 -300 540)(font "Arial" ))
+	(pt -288 552)
+	(pt -328 552)
+)
+(connector
+	(text "S[5]" (rect -312 624 -292 636)(font "Arial" ))
+	(pt -288 640)
+	(pt -320 640)
+)
+(connector
+	(text "S[5]" (rect -312 720 -292 732)(font "Arial" ))
+	(pt -288 736)
+	(pt -320 736)
+)
+(connector
+	(text "S[5]" (rect -305 816 -285 828)(font "Arial" ))
+	(pt -288 832)
+	(pt -320 832)
+)
+(connector
+	(text "S[5]" (rect -545 584 -525 596)(font "Arial" ))
+	(pt -568 600)
+	(pt -536 600)
+)
+(connector
+	(text "S[5]" (rect -549 680 -529 692)(font "Arial" ))
+	(pt -536 696)
+	(pt -568 696)
+)
+(connector
+	(text "S[5]" (rect -561 776 -541 788)(font "Arial" ))
+	(pt -536 792)
+	(pt -568 792)
+)
+(connector
+	(text "S[5]" (rect -547 872 -527 884)(font "Arial" ))
+	(pt -536 888)
+	(pt -576 888)
+)
+(connector
+	(text "S[2]" (rect -480 1048 -460 1060)(font "Arial" ))
+	(pt -448 1064)
+	(pt -488 1064)
+)
+(connector
+	(text "S[2]" (rect -4 872 16 884)(font "Arial" ))
+	(pt -48 888)
+	(pt 32 888)
+)
+(connector
+	(text "S[3]" (rect -31 480 -11 492)(font "Arial" ))
+	(pt 0 496)
+	(pt -80 496)
+)
+(connector
+	(text "S[3]" (rect -760 -40 -740 -28)(font "Arial" ))
+	(pt -728 -24)
+	(pt -768 -24)
+)
+(connector
+	(text "S[4]" (rect -80 -8 -60 4)(font "Arial" ))
+	(pt -16 8)
+	(pt -88 8)
+)
+(connector
+	(text "S[0]" (rect 690 432 710 444)(font "Arial" ))
+	(pt 720 448)
+	(pt 672 448)
+)
+(connector
+	(text "S[1]" (rect 840 968 860 980)(font "Arial" ))
+	(pt 856 984)
+	(pt 832 984)
 )
 (junction (pt -560 192))
 (junction (pt -320 232))
