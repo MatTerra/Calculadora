@@ -104,6 +104,22 @@ applicable agreement for further details.
 	(text "VCC" (rect -1 128 9 148)(font "Arial" (font_size 6))(vertical))
 )
 (pin
+	(input)
+	(rect 744 248 912 264)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "RST" (rect 5 0 26 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 968 -40 984 136)
 	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
@@ -431,70 +447,6 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
-(symbol
-	(rect 1328 216 1360 232)
-	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 0 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
-		(line (pt 16 0)(pt 16 8))
-	)
-	(drawing
-		(line (pt 24 8)(pt 8 8))
-	)
-	(rotate180)
-)
-(symbol
-	(rect 1184 216 1216 232)
-	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
-	(text "inst21" (rect 0 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
-		(line (pt 16 0)(pt 16 8))
-	)
-	(drawing
-		(line (pt 24 8)(pt 8 8))
-	)
-	(rotate180)
-)
-(symbol
-	(rect 1040 216 1072 232)
-	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
-	(text "inst22" (rect 0 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
-		(line (pt 16 0)(pt 16 8))
-	)
-	(drawing
-		(line (pt 24 8)(pt 8 8))
-	)
-	(rotate180)
-)
-(symbol
-	(rect 896 216 928 232)
-	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
-	(text "inst23" (rect 0 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
-		(line (pt 16 0)(pt 16 8))
-	)
-	(drawing
-		(line (pt 24 8)(pt 8 8))
-	)
-	(rotate180)
-)
 (connector
 	(pt 856 232)
 	(pt 856 176)
@@ -607,6 +559,40 @@ applicable agreement for further details.
 	(pt 824 232)
 	(pt 856 232)
 )
+(connector
+	(pt 912 256)
+	(pt 912 216)
+)
+(connector
+	(pt 912 256)
+	(pt 1056 256)
+)
+(connector
+	(pt 1200 216)
+	(pt 1200 248)
+)
+(connector
+	(pt 1056 216)
+	(pt 1056 248)
+)
+(connector
+	(pt 1056 248)
+	(pt 1056 256)
+)
+(connector
+	(pt 1344 216)
+	(pt 1344 248)
+)
+(connector
+	(pt 1056 248)
+	(pt 1200 248)
+)
+(connector
+	(pt 1200 248)
+	(pt 1344 248)
+)
 (junction (pt 856 232))
 (junction (pt 1000 232))
 (junction (pt 1144 232))
+(junction (pt 1056 248))
+(junction (pt 1200 248))

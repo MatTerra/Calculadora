@@ -3,7 +3,7 @@ module Saidas(in,cont);
 	output [7:0] cont;
 
 	always @(*)
-	case0 (in)
+	casex (in)
 		//RDY1
 		//00
 		7'b 1001110: cont = 8'b 00001000; //# getM

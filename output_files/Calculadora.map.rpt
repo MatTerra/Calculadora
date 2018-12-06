@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Calculadora
-Thu Dec 06 13:07:58 2018
+Thu Dec 06 15:38:27 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,12 +16,28 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. General Register Statistics
   9. Inverted Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d3"
- 12. Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d2"
- 13. Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d1"
- 14. Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d0"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22
+ 12. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst20
+ 13. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst18
+ 14. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst16
+ 15. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst14
+ 16. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst12
+ 17. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst10
+ 18. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst1
+ 19. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst22
+ 20. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst20
+ 21. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst18
+ 22. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst16
+ 23. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst14
+ 24. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst12
+ 25. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst10
+ 26. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst1
+ 27. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d3"
+ 28. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d2"
+ 29. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d1"
+ 30. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d0"
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
 
 
 
@@ -47,16 +63,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 06 13:07:57 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 06 15:38:27 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Calculadora                                     ;
-; Top-level Entity Name              ; TesteMaquinaDeEstados                           ;
+; Top-level Entity Name              ; Calculadore                                     ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 244                                             ;
-;     Total combinational functions  ; 238                                             ;
-;     Dedicated logic registers      ; 130                                             ;
-; Total registers                    ; 130                                             ;
-; Total pins                         ; 53                                              ;
+; Total logic elements               ; 381                                             ;
+;     Total combinational functions  ; 367                                             ;
+;     Dedicated logic registers      ; 171                                             ;
+; Total registers                    ; 171                                             ;
+; Total pins                         ; 100                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,90 +80,90 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                           ;
-+----------------------------------------------------------------------------+-----------------------+--------------------+
-; Option                                                                     ; Setting               ; Default Value      ;
-+----------------------------------------------------------------------------+-----------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6          ;                    ;
-; Top-level entity name                                                      ; TesteMaquinaDeEstados ; Calculadora        ;
-; Family name                                                                ; Cyclone II            ; Cyclone IV GX      ;
-; Verilog Show LMF Mapping Messages                                          ; Off                   ;                    ;
-; Verilog Version                                                            ; SystemVerilog_2005    ; Verilog_2001       ;
-; Use smart compilation                                                      ; Off                   ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                    ; On                 ;
-; Enable compact report table                                                ; Off                   ; Off                ;
-; Restructure Multiplexers                                                   ; Auto                  ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                   ; Off                ;
-; Preserve fewer node names                                                  ; On                    ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                   ; Off                ;
-; VHDL Version                                                               ; VHDL_1993             ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto                  ; Auto               ;
-; Safe State Machine                                                         ; Off                   ; Off                ;
-; Extract Verilog State Machines                                             ; On                    ; On                 ;
-; Extract VHDL State Machines                                                ; On                    ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                   ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000                  ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                   ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                    ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                    ; On                 ;
-; Parallel Synthesis                                                         ; On                    ; On                 ;
-; DSP Block Balancing                                                        ; Auto                  ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                    ; On                 ;
-; Power-Up Don't Care                                                        ; On                    ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                   ; Off                ;
-; Remove Duplicate Registers                                                 ; On                    ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                   ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                   ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                   ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                   ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                   ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                    ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                   ; Off                ;
-; Optimization Technique                                                     ; Balanced              ; Balanced           ;
-; Carry Chain Length                                                         ; 70                    ; 70                 ;
-; Auto Carry Chains                                                          ; On                    ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                    ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                   ; Off                ;
-; Auto ROM Replacement                                                       ; On                    ; On                 ;
-; Auto RAM Replacement                                                       ; On                    ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto                  ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto                  ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                    ; On                 ;
-; Strict RAM Replacement                                                     ; Off                   ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                    ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                   ; Off                ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                   ; Off                ;
-; Auto Resource Sharing                                                      ; Off                   ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                   ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                   ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                   ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                    ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                   ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                   ; Off                ;
-; Report Parameter Settings                                                  ; On                    ; On                 ;
-; Report Source Assignments                                                  ; On                    ; On                 ;
-; Report Connectivity Checks                                                 ; On                    ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                   ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                     ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation    ; Normal compilation ;
-; HDL message level                                                          ; Level2                ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                   ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000                  ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                  ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                   ; 100                ;
-; Clock MUX Protection                                                       ; On                    ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                   ; Off                ;
-; Block Design Naming                                                        ; Auto                  ; Auto               ;
-; SDC constraint protection                                                  ; Off                   ; Off                ;
-; Synthesis Effort                                                           ; Auto                  ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                    ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                   ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium                ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto                  ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                    ; On                 ;
-; Synthesis Seed                                                             ; 1                     ; 1                  ;
-+----------------------------------------------------------------------------+-----------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; Calculadore        ; Calculadora        ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
+; Verilog Version                                                            ; SystemVerilog_2005 ; Verilog_2001       ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -161,16 +177,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; teclado.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/teclado.v                 ;         ;
-; decoder7.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/decoder7.v                ;         ;
-; controle.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/controle.v                ;         ;
-; TesteMaquinaDeEstados.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/TesteMaquinaDeEstados.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+; Saidas.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Saidas.v             ;         ;
+; teclado.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/teclado.v            ;         ;
+; decoder7.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/decoder7.v           ;         ;
+; fullAdder.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/fullAdder.v          ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/ULA.bdf              ;         ;
+; Reg8bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Reg8bit.bdf          ;         ;
+; Calculadore.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Calculadore.bdf      ;         ;
+; Reg4bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Reg4bit.bdf          ;         ;
+; MaquinaDeEstados.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/MaquinaDeEstados.bdf ;         ;
+; controle.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/controle.v           ;         ;
+; mux2.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/mux2.v               ;         ;
+; mux4.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/mux4.v               ;         ;
+; BinToBCD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/BinToBCD.bdf         ;         ;
+; Comp2ToBin.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/Comp2ToBin.bdf       ;         ;
+; 74185.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74185.bdf            ;         ;
+; mux.tdf                          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mux.tdf                ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc            ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf            ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc         ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc             ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc           ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc           ;         ;
+; db/mux_lmc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/db/mux_lmc.tdf       ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -178,45 +213,93 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 244      ;
+; Estimated Total logic elements              ; 381      ;
 ;                                             ;          ;
-; Total combinational functions               ; 238      ;
+; Total combinational functions               ; 367      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 31       ;
-;     -- 3 input functions                    ; 87       ;
-;     -- <=2 input functions                  ; 120      ;
+;     -- 4 input functions                    ; 111      ;
+;     -- 3 input functions                    ; 126      ;
+;     -- <=2 input functions                  ; 130      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 131      ;
+;     -- normal mode                          ; 260      ;
 ;     -- arithmetic mode                      ; 107      ;
 ;                                             ;          ;
-; Total registers                             ; 130      ;
-;     -- Dedicated logic registers            ; 130      ;
+; Total registers                             ; 171      ;
+;     -- Dedicated logic registers            ; 171      ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 53       ;
+; I/O pins                                    ; 100      ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 128      ;
-; Total fan-out                               ; 1006     ;
-; Average fan-out                             ; 2.39     ;
+; Total fan-out                               ; 1635     ;
+; Average fan-out                             ; 2.56     ;
 +---------------------------------------------+----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
-; |TesteMaquinaDeEstados     ; 238 (5)           ; 130 (2)      ; 0           ; 0            ; 0       ; 0         ; 53   ; 0            ; |TesteMaquinaDeEstados                                         ; work         ;
-;    |decoder7:dec|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|decoder7:dec                            ; work         ;
-;    |teclado:tec|           ; 226 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|teclado:tec                             ; work         ;
-;       |controlador:U0|     ; 226 (58)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0              ; work         ;
-;          |Debouncer:d0|    ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d0 ; work         ;
-;          |Debouncer:d1|    ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d1 ; work         ;
-;          |Debouncer:d2|    ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d2 ; work         ;
-;          |Debouncer:d3|    ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d3 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |Calculadore                 ; 367 (3)           ; 171 (1)      ; 0           ; 0            ; 0       ; 0         ; 100  ; 0            ; |Calculadore                                                ; work         ;
+;    |BinToBCD:inst32|         ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|BinToBCD:inst32                                ; work         ;
+;       |74185:inst1|          ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|BinToBCD:inst32|74185:inst1                    ; work         ;
+;       |74185:inst|           ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|BinToBCD:inst32|74185:inst                     ; work         ;
+;    |Comp2ToBin:inst41|       ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41                              ; work         ;
+;       |ULA:ulatobin|         ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin                 ; work         ;
+;          |fullAdder:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst2 ; work         ;
+;          |fullAdder:inst3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst3 ; work         ;
+;          |fullAdder:inst4|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst4 ; work         ;
+;          |fullAdder:inst5|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst5 ; work         ;
+;          |fullAdder:inst6|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst6 ; work         ;
+;          |fullAdder:inst7|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst7 ; work         ;
+;    |MaquinaDeEstados:inst12| ; 6 (3)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|MaquinaDeEstados:inst12                        ; work         ;
+;       |controle:inst|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|MaquinaDeEstados:inst12|controle:inst          ; work         ;
+;    |Reg4bit:REGDA5|          ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg4bit:REGDA5                                 ; work         ;
+;    |Reg4bit:REGDA|           ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg4bit:REGDA                                  ; work         ;
+;    |Reg8bit:REGA|            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGA                                   ; work         ;
+;    |Reg8bit:REGB|            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGB                                   ; work         ;
+;    |Reg8bit:REGM|            ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGM                                   ; work         ;
+;    |Reg8bit:REGR|            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Reg8bit:REGR                                   ; work         ;
+;    |Saidas:ProcSaida|        ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|Saidas:ProcSaida                               ; work         ;
+;    |ULA:ULA|                 ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA                                        ; work         ;
+;       |fullAdder:inst2|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst2                        ; work         ;
+;       |fullAdder:inst3|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst3                        ; work         ;
+;       |fullAdder:inst4|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst4                        ; work         ;
+;       |fullAdder:inst5|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst5                        ; work         ;
+;       |fullAdder:inst6|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst6                        ; work         ;
+;       |fullAdder:inst7|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst7                        ; work         ;
+;       |fullAdder:inst8|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst8                        ; work         ;
+;       |fullAdder:inst|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|ULA:ULA|fullAdder:inst                         ; work         ;
+;    |decoder7:DECODEA|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:DECODEA                               ; work         ;
+;    |decoder7:DECODEB|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:DECODEB                               ; work         ;
+;    |decoder7:inst30|         ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:inst30                                ; work         ;
+;    |decoder7:inst9|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|decoder7:inst9                                 ; work         ;
+;    |mux2:MUX20|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX20                                     ; work         ;
+;    |mux2:MUX21|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX21                                     ; work         ;
+;    |mux2:MUX22|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX22                                     ; work         ;
+;    |mux2:MUX23|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX23                                     ; work         ;
+;    |mux2:MUX24|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX24                                     ; work         ;
+;    |mux2:MUX25|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX25                                     ; work         ;
+;    |mux2:MUX26|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX26                                     ; work         ;
+;    |mux2:MUX27|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX27                                     ; work         ;
+;    |mux2:MUX2B0|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B0                                    ; work         ;
+;    |mux2:MUX2B1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B1                                    ; work         ;
+;    |mux2:MUX2B2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B2                                    ; work         ;
+;    |mux2:MUX2B3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B3                                    ; work         ;
+;    |mux2:MUX2B4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B4                                    ; work         ;
+;    |mux2:MUX2B5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B5                                    ; work         ;
+;    |mux2:MUX2B6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B6                                    ; work         ;
+;    |mux2:MUX2B7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|mux2:MUX2B7                                    ; work         ;
+;    |teclado:inst16|          ; 226 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16                                 ; work         ;
+;       |controlador:U0|       ; 226 (58)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0                  ; work         ;
+;          |Debouncer:d0|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d0     ; work         ;
+;          |Debouncer:d1|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d1     ; work         ;
+;          |Debouncer:d2|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d2     ; work         ;
+;          |Debouncer:d3|      ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d3     ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,10 +308,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 130   ;
-; Number of registers using Synchronous Clear  ; 32    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Total registers                              ; 171   ;
+; Number of registers using Synchronous Clear  ; 40    ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 42    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 84    ;
 ; Number of registers using Preset             ; 0     ;
@@ -240,58 +323,235 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; teclado:tec|controlador:U0|linha[0]    ; 4       ;
+; teclado:inst16|controlador:U0|linha[0] ; 4       ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d0|Counter[18] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d1|Counter[2]  ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d2|Counter[7]  ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|Debouncer:d3|Counter[0]  ;
-; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |TesteMaquinaDeEstados|teclado:tec|controlador:U0|tecla[3]                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Calculadore|Reg8bit:REGM|inst                                      ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d0|Counter[9]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d1|Counter[11] ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d2|Counter[9]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|Debouncer:d3|Counter[18] ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |Calculadore|teclado:inst16|controlador:U0|tecla[2]                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d3" ;
-+--------+--------+----------+----------------------------------------+
-; Port   ; Type   ; Severity ; Details                                ;
-+--------+--------+----------+----------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                 ;
-+--------+--------+----------+----------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d2" ;
-+--------+--------+----------+----------------------------------------+
-; Port   ; Type   ; Severity ; Details                                ;
-+--------+--------+----------+----------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                 ;
-+--------+--------+----------+----------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst20 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d1" ;
-+--------+--------+----------+----------------------------------------+
-; Port   ; Type   ; Severity ; Details                                ;
-+--------+--------+----------+----------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                 ;
-+--------+--------+----------+----------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst18 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "teclado:tec|controlador:U0|Debouncer:d0" ;
-+--------+--------+----------+----------------------------------------+
-; Port   ; Type   ; Severity ; Details                                ;
-+--------+--------+----------+----------------------------------------+
-; oPulse ; Output ; Info     ; Explicitly unconnected                 ;
-+--------+--------+----------+----------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst16 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst14 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst12 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst10 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                      ;
+; WIDTHS         ; 1     ; Untyped                                                      ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst22 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst20 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst18 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst16 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst14 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst12 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst10 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst1 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; WIDTH          ; 2     ; Untyped                               ;
+; WIDTHS         ; 1     ; Untyped                               ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d3" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d2" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d1" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d0" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
 
 
 +-------------------------------+
@@ -299,7 +559,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -309,7 +569,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 06 13:07:50 2018
+    Info: Processing started: Thu Dec 06 15:38:17 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file saidas.v
@@ -348,12 +608,176 @@ Info (12021): Found 1 design units, including 1 entities, in source file comp2to
     Info (12023): Found entity 1: Comp2ToBin
 Info (12021): Found 1 design units, including 1 entities, in source file testemaquinadeestados.bdf
     Info (12023): Found entity 1: TesteMaquinaDeEstados
-Info (12127): Elaborating entity "TesteMaquinaDeEstados" for the top level hierarchy
-Info (12128): Elaborating entity "teclado" for hierarchy "teclado:tec"
-Info (12128): Elaborating entity "controlador" for hierarchy "teclado:tec|controlador:U0"
-Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:tec|controlador:U0|Debouncer:d0"
-Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:dec"
-Info (12128): Elaborating entity "controle" for hierarchy "controle:inst"
+Info (12127): Elaborating entity "Calculadore" for the top level hierarchy
+Warning (275083): Bus "IN3[1]" found using same base name as "IN3", which might lead to a name conflict.
+Warning (275083): Bus "IN2[1]" found using same base name as "IN2", which might lead to a name conflict.
+Warning (275083): Bus "IN1[1]" found using same base name as "IN1", which might lead to a name conflict.
+Warning (275083): Bus "IN0[1]" found using same base name as "IN0", which might lead to a name conflict.
+Warning (275011): Block or symbol "OR2" of instance "inst18" overlaps another block or symbol
+Warning (275080): Converted elements in bus name "in" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "in[0]" to "in0"
+    Warning (275081): Converted element name(s) from "in[1]" to "in1"
+    Warning (275081): Converted element name(s) from "in[2]" to "in2"
+    Warning (275081): Converted element name(s) from "in[3]" to "in3"
+    Warning (275081): Converted element name(s) from "in[4]" to "in4"
+    Warning (275081): Converted element name(s) from "in[5]" to "in5"
+    Warning (275081): Converted element name(s) from "in[6]" to "in6"
+    Warning (275081): Converted element name(s) from "in[6..0]" to "in6..0"
+    Warning (275081): Converted element name(s) from "in[6]" to "in6"
+    Warning (275081): Converted element name(s) from "in[6]" to "in6"
+Warning (275080): Converted elements in bus name "IN0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN0[0]" to "IN00"
+    Warning (275081): Converted element name(s) from "IN0[1..0]" to "IN01..0"
+    Warning (275081): Converted element name(s) from "IN0[0]" to "IN00"
+    Warning (275081): Converted element name(s) from "IN0[1..0]" to "IN01..0"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+Warning (275080): Converted elements in bus name "IN1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN1[0]" to "IN10"
+    Warning (275081): Converted element name(s) from "IN1[1..0]" to "IN11..0"
+    Warning (275081): Converted element name(s) from "IN1[0]" to "IN10"
+    Warning (275081): Converted element name(s) from "IN1[1..0]" to "IN11..0"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+Warning (275080): Converted elements in bus name "IN2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN2[0]" to "IN20"
+    Warning (275081): Converted element name(s) from "IN2[1..0]" to "IN21..0"
+    Warning (275081): Converted element name(s) from "IN2[0]" to "IN20"
+    Warning (275081): Converted element name(s) from "IN2[1..0]" to "IN21..0"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+Warning (275080): Converted elements in bus name "IN3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN3[1..0]" to "IN31..0"
+    Warning (275081): Converted element name(s) from "IN3[0]" to "IN30"
+    Warning (275081): Converted element name(s) from "IN3[1..0]" to "IN31..0"
+    Warning (275081): Converted element name(s) from "IN3[0]" to "IN30"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+Warning (275080): Converted elements in bus name "IN4" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN4[0]" to "IN40"
+    Warning (275081): Converted element name(s) from "IN4[1..0]" to "IN41..0"
+    Warning (275081): Converted element name(s) from "IN4[1]" to "IN41"
+    Warning (275081): Converted element name(s) from "IN4[0]" to "IN40"
+    Warning (275081): Converted element name(s) from "IN4[1..0]" to "IN41..0"
+Warning (275080): Converted elements in bus name "IN5" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN5[1]" to "IN51"
+    Warning (275081): Converted element name(s) from "IN5[0]" to "IN50"
+    Warning (275081): Converted element name(s) from "IN5[1..0]" to "IN51..0"
+    Warning (275081): Converted element name(s) from "IN5[1..0]" to "IN51..0"
+    Warning (275081): Converted element name(s) from "IN5[0]" to "IN50"
+Warning (275080): Converted elements in bus name "IN6" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN6[0]" to "IN60"
+    Warning (275081): Converted element name(s) from "IN6[0]" to "IN60"
+    Warning (275081): Converted element name(s) from "IN6[1]" to "IN61"
+    Warning (275081): Converted element name(s) from "IN6[1..0]" to "IN61..0"
+    Warning (275081): Converted element name(s) from "IN6[1..0]" to "IN61..0"
+Info (12128): Elaborating entity "teclado" for hierarchy "teclado:inst16"
+Info (12128): Elaborating entity "controlador" for hierarchy "teclado:inst16|controlador:U0"
+Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:inst16|controlador:U0|Debouncer:d0"
+Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:inst9"
+Info (12128): Elaborating entity "BinToBCD" for hierarchy "BinToBCD:inst32"
+Warning (275011): Block or symbol "74185" of instance "inst" overlaps another block or symbol
+Warning (275011): Block or symbol "74185" of instance "inst2" overlaps another block or symbol
+Info (12128): Elaborating entity "74185" for hierarchy "BinToBCD:inst32|74185:inst1"
+Info (12130): Elaborated megafunction instantiation "BinToBCD:inst32|74185:inst1"
+Info (12128): Elaborating entity "Comp2ToBin" for hierarchy "Comp2ToBin:inst41"
+Info (12128): Elaborating entity "ULA" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin"
+Warning (275083): Bus "B2[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B2[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B2[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B3[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B3[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B3[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B4[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B4[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B4[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B5[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B5[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B5[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B6[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B6[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B6[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B7[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B7[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B7[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B1[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B1[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B1[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B0[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B0[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B0[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "B" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B[0]" to "B0"
+    Warning (275081): Converted element name(s) from "B[1]" to "B1"
+    Warning (275081): Converted element name(s) from "B[2]" to "B2"
+    Warning (275081): Converted element name(s) from "B[3]" to "B3"
+    Warning (275081): Converted element name(s) from "B[5]" to "B5"
+    Warning (275081): Converted element name(s) from "B[6]" to "B6"
+    Warning (275081): Converted element name(s) from "B[7]" to "B7"
+    Warning (275081): Converted element name(s) from "B[4]" to "B4"
+Warning (275080): Converted elements in bus name "B0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B0[0]" to "B00"
+    Warning (275081): Converted element name(s) from "B0[1]" to "B01"
+    Warning (275081): Converted element name(s) from "B0[1..0]" to "B01..0"
+Warning (275080): Converted elements in bus name "B1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B1[0]" to "B10"
+    Warning (275081): Converted element name(s) from "B1[1]" to "B11"
+    Warning (275081): Converted element name(s) from "B1[1..0]" to "B11..0"
+Warning (275080): Converted elements in bus name "B2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B2[1..0]" to "B21..0"
+    Warning (275081): Converted element name(s) from "B2[0]" to "B20"
+    Warning (275081): Converted element name(s) from "B2[1]" to "B21"
+Warning (275080): Converted elements in bus name "B3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B3[0]" to "B30"
+    Warning (275081): Converted element name(s) from "B3[1]" to "B31"
+    Warning (275081): Converted element name(s) from "B3[1..0]" to "B31..0"
+Warning (275080): Converted elements in bus name "B4" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B4[1..0]" to "B41..0"
+    Warning (275081): Converted element name(s) from "B4[0]" to "B40"
+    Warning (275081): Converted element name(s) from "B4[1]" to "B41"
+Warning (275080): Converted elements in bus name "B5" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B5[1]" to "B51"
+    Warning (275081): Converted element name(s) from "B5[0]" to "B50"
+    Warning (275081): Converted element name(s) from "B5[1..0]" to "B51..0"
+Warning (275080): Converted elements in bus name "B6" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B6[1..0]" to "B61..0"
+    Warning (275081): Converted element name(s) from "B6[0]" to "B60"
+    Warning (275081): Converted element name(s) from "B6[1]" to "B61"
+Warning (275080): Converted elements in bus name "B7" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B7[1..0]" to "B71..0"
+    Warning (275081): Converted element name(s) from "B7[0]" to "B70"
+    Warning (275081): Converted element name(s) from "B7[1]" to "B71"
+Info (12128): Elaborating entity "fullAdder" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst8"
+Info (12128): Elaborating entity "MUX" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22"
+Info (12130): Elaborated megafunction instantiation "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22"
+Info (12133): Instantiated megafunction "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "2"
+    Info (12134): Parameter "WIDTHS" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22|lpm_mux:$00001"
+Info (12131): Elaborated megafunction instantiation "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22|lpm_mux:$00001", which is child of megafunction instantiation "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_lmc.tdf
+    Info (12023): Found entity 1: mux_lmc
+Info (12128): Elaborating entity "mux_lmc" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22|lpm_mux:$00001|mux_lmc:auto_generated"
+Info (12128): Elaborating entity "Reg8bit" for hierarchy "Reg8bit:REGR"
+Info (12128): Elaborating entity "Saidas" for hierarchy "Saidas:ProcSaida"
+Info (12128): Elaborating entity "MaquinaDeEstados" for hierarchy "MaquinaDeEstados:inst12"
+Info (12128): Elaborating entity "controle" for hierarchy "MaquinaDeEstados:inst12|controle:inst"
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:MUX27"
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:MUX7"
+Info (12128): Elaborating entity "Reg4bit" for hierarchy "Reg4bit:REGDA5"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer Saidas:ProcSaida|WideOr4~synth
+    Warning (19017): Found clock multiplexer Saidas:ProcSaida|WideOr3~synth
+    Warning (19017): Found clock multiplexer Saidas:ProcSaida|WideOr2~synth
+    Warning (19017): Found clock multiplexer Saidas:ProcSaida|WideOr5~synth
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[25]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[23]" and its non-tri-state driver.
@@ -398,18 +822,39 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[3]" is stuck at GND
+    Warning (13410): Pin "LEDG[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[13]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
     Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 297 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 16 output pins
+Info (21057): Implemented 481 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 62 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 244 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Thu Dec 06 13:07:58 2018
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:06
+    Info (21061): Implemented 381 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 209 warnings
+    Info: Peak virtual memory: 4626 megabytes
+    Info: Processing ended: Thu Dec 06 15:38:28 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:09
 
 

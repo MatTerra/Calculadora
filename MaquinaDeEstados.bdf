@@ -100,6 +100,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 312 224 480 240)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "RST" (rect 5 0 27 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 568 88 744 104)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -160,22 +176,6 @@ applicable agreement for further details.
 	(drawing
 		(line (pt 8 8)(pt 24 8))
 	)
-)
-(symbol
-	(rect 456 216 488 232)
-	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 6 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
-		(line (pt 16 0)(pt 16 8))
-	)
-	(drawing
-		(line (pt 24 8)(pt 8 8))
-	)
-	(rotate180)
 )
 (symbol
 	(rect 440 136 504 216)
@@ -276,22 +276,6 @@ applicable agreement for further details.
 		(circle (rect 28 4 36 12))
 		(circle (rect 28 68 36 76))
 	)
-)
-(symbol
-	(rect 336 216 368 232)
-	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
-	(text "sdljgb" (rect 1 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
-		(line (pt 16 0)(pt 16 8))
-	)
-	(drawing
-		(line (pt 24 8)(pt 8 8))
-	)
-	(rotate180)
 )
 (symbol
 	(rect 392 -16 552 64)
@@ -500,6 +484,26 @@ applicable agreement for further details.
 	(pt 352 120)
 	(pt 352 16)
 )
+(connector
+	(pt 352 216)
+	(pt 352 224)
+)
+(connector
+	(pt 472 216)
+	(pt 472 224)
+)
+(connector
+	(pt 352 224)
+	(pt 472 224)
+)
+(connector
+	(pt 472 224)
+	(pt 480 224)
+)
+(connector
+	(pt 480 224)
+	(pt 480 232)
+)
 (junction (pt 304 248))
 (junction (pt 336 16))
 (junction (pt 352 16))
@@ -511,3 +515,4 @@ applicable agreement for further details.
 (junction (pt 112 96))
 (junction (pt 112 72))
 (junction (pt 112 48))
+(junction (pt 472 224))
