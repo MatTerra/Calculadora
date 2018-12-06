@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Calculadora
-Wed Dec 05 22:38:31 2018
+Thu Dec 06 10:46:57 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,13 +10,27 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22
+  6. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst20
+  7. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst18
+  8. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst16
+  9. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst14
+ 10. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst12
+ 11. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst10
+ 12. Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst1
+ 13. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst22
+ 14. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst20
+ 15. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst18
+ 16. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst16
+ 17. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst14
+ 18. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst12
+ 19. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst10
+ 20. Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst1
+ 21. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d3"
+ 22. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d2"
+ 23. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d1"
+ 24. Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d0"
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -42,20 +56,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 05 22:38:31 2018           ;
+; Analysis & Synthesis Status        ; Failed - Thu Dec 06 10:46:56 2018               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Calculadora                                     ;
-; Top-level Entity Name              ; MaquinaDeEstados                                ;
+; Top-level Entity Name              ; Calculadore                                     ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2                                               ;
-;     Total combinational functions  ; 2                                               ;
-;     Dedicated logic registers      ; 1                                               ;
-; Total registers                    ; 1                                               ;
-; Total pins                         ; 7                                               ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -65,7 +79,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; MaquinaDeEstados   ; Calculadora        ;
+; Top-level entity name                                                      ; Calculadore        ; Calculadora        ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
 ; Verilog Version                                                            ; SystemVerilog_2005 ; Verilog_2001       ;
@@ -156,88 +170,216 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; MaquinaDeEstados.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/MaquinaDeEstados.bdf ;         ;
-; controle.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mateus Terra/Documents/UnB/CL/ProjetoFinal/controle.v           ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2     ;
-;                                             ;       ;
-; Total combinational functions               ; 2     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 1     ;
-;     -- 3 input functions                    ; 1     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 1     ;
-;     -- Dedicated logic registers            ; 1     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 7     ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; inst6 ;
-; Maximum fan-out                             ; 3     ;
-; Total fan-out                               ; 10    ;
-; Average fan-out                             ; 1.00  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst20 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |MaquinaDeEstados          ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |MaquinaDeEstados   ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst18 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; inst10                                ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1 ;                                        ;
-+---------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst16 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 1     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst14 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst12 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst10 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                       ;
+; WIDTHS         ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comp2ToBin:inst41|ULA:ulatobin|MUX:inst1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                      ;
+; WIDTHS         ; 1     ; Untyped                                                      ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst22 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst20 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst18 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst16 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst14 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst12 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst10 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 2     ; Untyped                                ;
+; WIDTHS         ; 1     ; Untyped                                ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA|MUX:inst1 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; WIDTH          ; 2     ; Untyped                               ;
+; WIDTHS         ; 1     ; Untyped                               ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d3" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d2" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d1" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "teclado:inst16|controlador:U0|Debouncer:d0" ;
++--------+--------+----------+-------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                   ;
++--------+--------+----------+-------------------------------------------+
+; oPulse ; Output ; Info     ; Explicitly unconnected                    ;
++--------+--------+----------+-------------------------------------------+
 
 
 +-------------------------------+
@@ -246,9 +388,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 05 22:38:27 2018
+    Info: Processing started: Thu Dec 06 10:46:45 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file saidas.v
+    Info (12023): Found entity 1: Saidas
 Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
     Info (12023): Found entity 1: top
 Info (12021): Found 3 design units, including 3 entities, in source file teclado.v
@@ -271,49 +415,175 @@ Info (12021): Found 1 design units, including 1 entities, in source file reg4bit
     Info (12023): Found entity 1: Reg4bit
 Info (12021): Found 1 design units, including 1 entities, in source file maquinadeestados.bdf
     Info (12023): Found entity 1: MaquinaDeEstados
-Warning (10229): Verilog HDL Expression warning at controle.v(10): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(11): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(12): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(17): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(20): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(22): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(24): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(25): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(26): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(27): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(28): truncated literal to match 5 bits
-Warning (10229): Verilog HDL Expression warning at controle.v(32): truncated literal to match 5 bits
 Info (12021): Found 1 design units, including 1 entities, in source file controle.v
     Info (12023): Found entity 1: controle
-Info (12127): Elaborating entity "MaquinaDeEstados" for the top level hierarchy
-Info (12128): Elaborating entity "controle" for hierarchy "controle:inst"
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(15): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(17): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(18): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(19): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(20): casex/casez item expression overlaps with a previous casex/casez item expression
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
+    Info (12023): Found entity 1: mux2
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.v
+    Info (12023): Found entity 1: mux4
+Info (12021): Found 1 design units, including 1 entities, in source file bintobcd.bdf
+    Info (12023): Found entity 1: BinToBCD
+Info (12021): Found 1 design units, including 1 entities, in source file comp2tobin.bdf
+    Info (12023): Found entity 1: Comp2ToBin
+Info (12127): Elaborating entity "Calculadore" for the top level hierarchy
+Warning (275011): Block or symbol "OR2" of instance "inst18" overlaps another block or symbol
+Warning (275080): Converted elements in bus name "in" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "in[5..0]" to "in5..0"
+    Warning (275081): Converted element name(s) from "in[0]" to "in0"
+    Warning (275081): Converted element name(s) from "in[1]" to "in1"
+    Warning (275081): Converted element name(s) from "in[2]" to "in2"
+    Warning (275081): Converted element name(s) from "in[3]" to "in3"
+    Warning (275081): Converted element name(s) from "in[4]" to "in4"
+    Warning (275081): Converted element name(s) from "in[5]" to "in5"
+Warning (275080): Converted elements in bus name "IN0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN0[0]" to "IN00"
+    Warning (275081): Converted element name(s) from "IN0[1..0]" to "IN01..0"
+    Warning (275081): Converted element name(s) from "IN0[0]" to "IN00"
+    Warning (275081): Converted element name(s) from "IN0[1..0]" to "IN01..0"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+    Warning (275081): Converted element name(s) from "IN0[1]" to "IN01"
+Warning (275080): Converted elements in bus name "IN1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN1[0]" to "IN10"
+    Warning (275081): Converted element name(s) from "IN1[1..0]" to "IN11..0"
+    Warning (275081): Converted element name(s) from "IN1[0]" to "IN10"
+    Warning (275081): Converted element name(s) from "IN1[1..0]" to "IN11..0"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+    Warning (275081): Converted element name(s) from "IN1[1]" to "IN11"
+Warning (275080): Converted elements in bus name "IN2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN2[0]" to "IN20"
+    Warning (275081): Converted element name(s) from "IN2[1..0]" to "IN21..0"
+    Warning (275081): Converted element name(s) from "IN2[0]" to "IN20"
+    Warning (275081): Converted element name(s) from "IN2[1..0]" to "IN21..0"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+    Warning (275081): Converted element name(s) from "IN2[1]" to "IN21"
+Warning (275080): Converted elements in bus name "IN3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN3[1..0]" to "IN31..0"
+    Warning (275081): Converted element name(s) from "IN3[0]" to "IN30"
+    Warning (275081): Converted element name(s) from "IN3[1..0]" to "IN31..0"
+    Warning (275081): Converted element name(s) from "IN3[0]" to "IN30"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+    Warning (275081): Converted element name(s) from "IN3[1]" to "IN31"
+Warning (275080): Converted elements in bus name "IN4" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN4[0]" to "IN40"
+    Warning (275081): Converted element name(s) from "IN4[1..0]" to "IN41..0"
+    Warning (275081): Converted element name(s) from "IN4[1]" to "IN41"
+    Warning (275081): Converted element name(s) from "IN4[0]" to "IN40"
+    Warning (275081): Converted element name(s) from "IN4[1..0]" to "IN41..0"
+Warning (275080): Converted elements in bus name "IN5" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "IN5[1]" to "IN51"
+    Warning (275081): Converted element name(s) from "IN5[0]" to "IN50"
+    Warning (275081): Converted element name(s) from "IN5[1..0]" to "IN51..0"
+    Warning (275081): Converted element name(s) from "IN5[1..0]" to "IN51..0"
+    Warning (275081): Converted element name(s) from "IN5[0]" to "IN50"
+Info (12128): Elaborating entity "teclado" for hierarchy "teclado:inst16"
+Info (12128): Elaborating entity "controlador" for hierarchy "teclado:inst16|controlador:U0"
+Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:inst16|controlador:U0|Debouncer:d0"
+Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:inst9"
+Info (12128): Elaborating entity "BinToBCD" for hierarchy "BinToBCD:inst32"
+Warning (275011): Block or symbol "74185" of instance "inst" overlaps another block or symbol
+Warning (275011): Block or symbol "74185" of instance "inst2" overlaps another block or symbol
+Info (12128): Elaborating entity "74185" for hierarchy "BinToBCD:inst32|74185:inst1"
+Info (12130): Elaborated megafunction instantiation "BinToBCD:inst32|74185:inst1"
+Info (12128): Elaborating entity "Comp2ToBin" for hierarchy "Comp2ToBin:inst41"
+Info (12128): Elaborating entity "ULA" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin"
+Warning (275083): Bus "B2[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B2[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B2[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B3[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B3[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B3[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B4[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B4[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B4[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B5[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B5[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B5[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B6[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B6[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B6[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B7[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B7[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B7[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B1[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B1[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B1[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B0[0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B0[1]" found using same base name as "B", which might lead to a name conflict.
+Warning (275083): Bus "B0[1..0]" found using same base name as "B", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "B" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B[0]" to "B0"
+    Warning (275081): Converted element name(s) from "B[1]" to "B1"
+    Warning (275081): Converted element name(s) from "B[2]" to "B2"
+    Warning (275081): Converted element name(s) from "B[3]" to "B3"
+    Warning (275081): Converted element name(s) from "B[5]" to "B5"
+    Warning (275081): Converted element name(s) from "B[6]" to "B6"
+    Warning (275081): Converted element name(s) from "B[7]" to "B7"
+    Warning (275081): Converted element name(s) from "B[4]" to "B4"
+Warning (275080): Converted elements in bus name "B0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B0[0]" to "B00"
+    Warning (275081): Converted element name(s) from "B0[1]" to "B01"
+    Warning (275081): Converted element name(s) from "B0[1..0]" to "B01..0"
+Warning (275080): Converted elements in bus name "B1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B1[0]" to "B10"
+    Warning (275081): Converted element name(s) from "B1[1]" to "B11"
+    Warning (275081): Converted element name(s) from "B1[1..0]" to "B11..0"
+Warning (275080): Converted elements in bus name "B2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B2[1..0]" to "B21..0"
+    Warning (275081): Converted element name(s) from "B2[0]" to "B20"
+    Warning (275081): Converted element name(s) from "B2[1]" to "B21"
+Warning (275080): Converted elements in bus name "B3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B3[0]" to "B30"
+    Warning (275081): Converted element name(s) from "B3[1]" to "B31"
+    Warning (275081): Converted element name(s) from "B3[1..0]" to "B31..0"
+Warning (275080): Converted elements in bus name "B4" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B4[1..0]" to "B41..0"
+    Warning (275081): Converted element name(s) from "B4[0]" to "B40"
+    Warning (275081): Converted element name(s) from "B4[1]" to "B41"
+Warning (275080): Converted elements in bus name "B5" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B5[1]" to "B51"
+    Warning (275081): Converted element name(s) from "B5[0]" to "B50"
+    Warning (275081): Converted element name(s) from "B5[1..0]" to "B51..0"
+Warning (275080): Converted elements in bus name "B6" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B6[1..0]" to "B61..0"
+    Warning (275081): Converted element name(s) from "B6[0]" to "B60"
+    Warning (275081): Converted element name(s) from "B6[1]" to "B61"
+Warning (275080): Converted elements in bus name "B7" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B7[1..0]" to "B71..0"
+    Warning (275081): Converted element name(s) from "B7[0]" to "B70"
+    Warning (275081): Converted element name(s) from "B7[1]" to "B71"
+Info (12128): Elaborating entity "fullAdder" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|fullAdder:inst8"
+Info (12128): Elaborating entity "MUX" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22"
+Info (12130): Elaborated megafunction instantiation "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22"
+Info (12133): Instantiated megafunction "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "2"
+    Info (12134): Parameter "WIDTHS" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22|lpm_mux:$00001"
+Info (12131): Elaborated megafunction instantiation "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22|lpm_mux:$00001", which is child of megafunction instantiation "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_lmc.tdf
+    Info (12023): Found entity 1: mux_lmc
+Info (12128): Elaborating entity "mux_lmc" for hierarchy "Comp2ToBin:inst41|ULA:ulatobin|MUX:inst22|lpm_mux:$00001|mux_lmc:auto_generated"
+Info (12128): Elaborating entity "Reg8bit" for hierarchy "Reg8bit:REGR"
+Info (12128): Elaborating entity "Saidas" for hierarchy "Saidas:inst38"
+Info (12128): Elaborating entity "MaquinaDeEstados" for hierarchy "MaquinaDeEstados:inst12"
+Info (12128): Elaborating entity "controle" for hierarchy "MaquinaDeEstados:inst12|controle:inst"
 Warning (10935): Verilog HDL Casex/Casez warning at controle.v(22): casex/casez item expression overlaps with a previous casex/casez item expression
 Warning (10935): Verilog HDL Casex/Casez warning at controle.v(23): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10272): Verilog HDL Case Statement warning at controle.v(24): case item expression covers a value already covered by a previous case item
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(25): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(26): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10935): Verilog HDL Casex/Casez warning at controle.v(27): casex/casez item expression overlaps with a previous casex/casez item expression
-Warning (10272): Verilog HDL Case Statement warning at controle.v(28): case item expression covers a value already covered by a previous case item
-Warning (10272): Verilog HDL Case Statement warning at controle.v(30): case item expression covers a value already covered by a previous case item
-Warning (10272): Verilog HDL Case Statement warning at controle.v(31): case item expression covers a value already covered by a previous case item
-Warning (10272): Verilog HDL Case Statement warning at controle.v(32): case item expression covers a value already covered by a previous case item
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Q[1]" is stuck at GND
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4619 megabytes
-    Info: Processing ended: Wed Dec 05 22:38:32 2018
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:MUX27"
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:MUX7"
+Info (12128): Elaborating entity "Reg4bit" for hierarchy "Reg4bit:REGDA5"
+Error (12009): Node "Op" is missing source
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 127 warnings
+    Error: Peak virtual memory: 4600 megabytes
+    Error: Processing ended: Thu Dec 06 10:46:57 2018
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:04
 
 

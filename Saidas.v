@@ -1,4 +1,4 @@
-module SaidaEscA(in,cont);
+module Saidas(in,cont);
 	input [5:0] in;
 	output [6:0] cont;
 
