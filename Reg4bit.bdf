@@ -105,7 +105,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 744 248 912 264)
+	(rect 456 256 624 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "RST" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -560,39 +560,40 @@ applicable agreement for further details.
 	(pt 856 232)
 )
 (connector
-	(pt 912 256)
 	(pt 912 216)
-)
-(connector
-	(pt 912 256)
-	(pt 1056 256)
-)
-(connector
-	(pt 1200 216)
-	(pt 1200 248)
+	(pt 912 264)
 )
 (connector
 	(pt 1056 216)
-	(pt 1056 248)
-)
-(connector
-	(pt 1056 248)
-	(pt 1056 256)
+	(pt 1056 264)
 )
 (connector
 	(pt 1344 216)
-	(pt 1344 248)
+	(pt 1344 264)
 )
 (connector
-	(pt 1056 248)
-	(pt 1200 248)
+	(pt 1200 216)
+	(pt 1200 264)
 )
 (connector
-	(pt 1200 248)
-	(pt 1344 248)
+	(pt 1056 264)
+	(pt 1200 264)
+)
+(connector
+	(pt 1200 264)
+	(pt 1344 264)
+)
+(connector
+	(pt 912 264)
+	(pt 1056 264)
+)
+(connector
+	(pt 624 264)
+	(pt 912 264)
 )
 (junction (pt 856 232))
 (junction (pt 1000 232))
 (junction (pt 1144 232))
-(junction (pt 1056 248))
-(junction (pt 1200 248))
+(junction (pt 912 264))
+(junction (pt 1056 264))
+(junction (pt 1200 264))

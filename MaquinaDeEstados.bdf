@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 312 224 480 240)
+	(rect -24 312 144 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "RST" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
@@ -498,11 +498,15 @@ applicable agreement for further details.
 )
 (connector
 	(pt 472 224)
-	(pt 480 224)
+	(pt 528 224)
 )
 (connector
-	(pt 480 224)
-	(pt 480 232)
+	(pt 528 320)
+	(pt 144 320)
+)
+(connector
+	(pt 528 224)
+	(pt 528 320)
 )
 (junction (pt 304 248))
 (junction (pt 336 16))
